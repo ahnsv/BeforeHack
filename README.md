@@ -55,6 +55,9 @@ So the previous expression can be abridged to this tree:
 These whole process, converting the code to CST+AST or just AST, or in other words lexical and syntax analysis, is so called as the analysis phase, or front-end of the compiler
 Technically speaking, it's the **intermediate representation(IR)** of a program, which makes a data structure that is used by the compiler to represent a source text
 
+## Useful Resource
+- [https://yuml.me/](https://yuml.me/)
+
 ## Reference
 
 - [https://medium.com/basecs/grammatically-rooting-oneself-with-parse-trees-ec9daeda7dad](https://medium.com/basecs/grammatically-rooting-oneself-with-parse-trees-ec9daeda7dad)
