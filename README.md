@@ -55,6 +55,16 @@ So the previous expression can be abridged to this tree:
 These whole process, converting the code to CST+AST or just AST, or in other words lexical and syntax analysis, is so called as the analysis phase, or front-end of the compiler
 Technically speaking, it's the **intermediate representation(IR)** of a program, which makes a data structure that is used by the compiler to represent a source text
 
+## UML
+
+## Graphing Methodology
+### Possible candidates
+- [node-graphviz](https://github.com/glejeune/node-graphviz)
+  - [https://github.com/joaompneves/tsviz/blob/1e21243b92fe3ee0749dd540d7032ee6f4137852/src/uml-builder.ts#L8](https://github.com/joaompneves/tsviz/blob/1e21243b92fe3ee0749dd540d7032ee6f4137852/src/uml-builder.ts#L8)
+- online sequence diagram tools
+  - [sequencediagram.org]()
+  - [yuml.me](https://yuml.me/)
+
 ## Useful Resource
 - [https://yuml.me/](https://yuml.me/)
 - [https://blog.scottlogic.com/2017/05/02/typescript-compiler-api-revisited.html](https://blog.scottlogic.com/2017/05/02/typescript-compiler-api-revisited.html)
