@@ -57,6 +57,7 @@ Technically speaking, it's the **intermediate representation(IR)** of a program,
 
 ## Useful Resource
 - [https://yuml.me/](https://yuml.me/)
+- [https://blog.scottlogic.com/2017/05/02/typescript-compiler-api-revisited.html](https://blog.scottlogic.com/2017/05/02/typescript-compiler-api-revisited.html)
 
 ## Reference
 
