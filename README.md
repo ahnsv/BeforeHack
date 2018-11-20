@@ -69,6 +69,10 @@ Technically speaking, it's the **intermediate representation(IR)** of a program,
 - [https://yuml.me/](https://yuml.me/)
 - [https://blog.scottlogic.com/2017/05/02/typescript-compiler-api-revisited.html](https://blog.scottlogic.com/2017/05/02/typescript-compiler-api-revisited.html)
 
+## Revelant Code Analysis
+- [https://github.com/fsahmad/typescript-uml/blob/c17b32ca510a256d9819a6028be3a77f93d9481a/src/delint.ts#L1](https://github.com/fsahmad/typescript-uml/blob/c17b32ca510a256d9819a6028be3a77f93d9481a/src/delint.ts#L1)
+- Please checkout this... [https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API)
+
 ## Reference
 
 - [https://medium.com/basecs/grammatically-rooting-oneself-with-parse-trees-ec9daeda7dad](https://medium.com/basecs/grammatically-rooting-oneself-with-parse-trees-ec9daeda7dad)
