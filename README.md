@@ -1,6 +1,7 @@
 # BeforeHack
 ## Initial Thoughts/stuffs to explore
 - What is AST? How does it work?
+- How to use Typescript Compiler API effectively?
 - How does UML Work?
 - How do we visualize these?
 - Detailed Stack/Methodology to choose
@@ -55,8 +56,33 @@ So the previous expression can be abridged to this tree:
 These whole process, converting the code to CST+AST or just AST, or in other words lexical and syntax analysis, is so called as the analysis phase, or front-end of the compiler
 Technically speaking, it's the **intermediate representation(IR)** of a program, which makes a data structure that is used by the compiler to represent a source text
 
+## Typescript Compiler API
+- [https://typescript-api-playground.glitch.me/#example=TypeScript%20scanner](https://typescript-api-playground.glitch.me/#example=TypeScript%20scanner)
+
 ## UML
 
+## Project Structure
+```text
+AST -> json -> mapper -> PlantUML Builder -> template -> UML
+```
+
+### What do I need for UML out of ts AST
+- Class Name: First Block of Class Diagram
+- Access `modifiers` + `PropertyDeclaration`: Second Block of Class UML
+- `modifiers` + `MethodDeclaration` + `Parameter` + `returnType` Third Block of Class UML
+- `typeChecker` for method return, parameters, variables, etc
+- probabily signature
+
+### Mapping UML Builder by relationship
+- Generalization
+- Dependency
+- Realization
+- Composition
+- Aggregation
+- Reflexive
+- Association / Direct Association
+### Mapping Hierarchy
+TODO: How to implement mapping hierarchy
 ## Graphing Methodology
 ### Possible candidates
 - [node-graphviz](https://github.com/glejeune/node-graphviz)
@@ -72,6 +98,11 @@ Technically speaking, it's the **intermediate representation(IR)** of a program,
 ## Revelant Code Analysis
 - [https://github.com/fsahmad/typescript-uml/blob/c17b32ca510a256d9819a6028be3a77f93d9481a/src/delint.ts#L1](https://github.com/fsahmad/typescript-uml/blob/c17b32ca510a256d9819a6028be3a77f93d9481a/src/delint.ts#L1)
 - Please checkout this... [https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API](https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API)
+- [https://astexplorer.net/](https://astexplorer.net/)
+- [https://typescript-api-playground.glitch.me/#example=TypeScript%20scanner](https://typescript-api-playground.glitch.me/#example=TypeScript%20scanner)
+- [https://basarat.gitbooks.io/typescript/content/docs/compiler/ast.html](https://basarat.gitbooks.io/typescript/content/docs/compiler/ast.html)
+- [https://gmlwjd9405.github.io/2018/07/04/class-diagram.html](https://gmlwjd9405.github.io/2018/07/04/class-diagram.html)
+- [http://www.nextree.co.kr/p6753/](http://www.nextree.co.kr/p6753/)
 
 ## Reference
 
